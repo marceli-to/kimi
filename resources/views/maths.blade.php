@@ -4,5 +4,5 @@
     $type = request()->query('type');
     $amount = request()->query('amount');
   @endphp
-  <livewire:math_tasks type="{{ $type }}" amount="{{ $amount }}" />
+  <livewire:math_tasks type="{{ $type ?? 'add_sub' }}" amount="{{ $amount ?? '10' }}" />
 </x-app-layout>
