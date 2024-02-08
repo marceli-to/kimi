@@ -66,10 +66,10 @@ class MathTasks extends Component
     // it should be easy to understand and only have numbers from 1 to 10
     for ($i = 0; $i < $this->amount; $i++)
     {
-      $operation = rand(0, 1) ? '*' : '/';
+      $operation = rand(0, 1) ? '∙' : ':';
       $secondNumber = rand(1, 10);
   
-      if ($operation == '*')
+      if ($operation == '∙')
       {
         // For multiplication, both numbers can be freely chosen from 1 to 10
         $firstNumber = rand(1, 10);
