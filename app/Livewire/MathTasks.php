@@ -35,8 +35,8 @@ class MathTasks extends Component
     for ($i = 0; $i < $this->amount; $i++)
     {
       $operation = rand(0, 1) ? '+' : '-';
-      $firstNumber = rand(0, 20);
-      $secondNumber = rand(0, 20);
+      $firstNumber = rand(0, 100);
+      $secondNumber = rand(0, 100);
 
       // Ensure subtraction doesn't result in negative numbers
       if ($operation == '-' && $firstNumber < $secondNumber)
